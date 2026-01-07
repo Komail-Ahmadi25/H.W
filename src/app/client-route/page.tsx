@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
-
+import f1 from "@/public/image/f1.png";
 export default function ImageSlider() {
   const settings = {
     dots: true,
@@ -14,36 +14,14 @@ export default function ImageSlider() {
     <div className="image-slider-container">
       <Slider {...settings}>
         <div>
-          <Image
-            height={1000}
-            width={1000}
-            alt="error"
-            src="https://unsplash.com/photos/programming-code-abstract-technology-background-of-software-developer-and-computer-script-ltpb_WinC3Y"
-          />
+          <Image alt="error" src={f1} />
+        </div>
+
+        <div>
+          <Image alt="error" src={f1} />
         </div>
         <div>
-          <Image
-            height={1000}
-            width={1000}
-            alt="error"
-            src="https://unsplash.com/photos/macbook-pro-turned-on-Bd7gNnWJBkU"
-          />
-        </div>
-        <div>
-          <Image
-            height={1000}
-            width={1000}
-            alt="error"
-            src="https://unsplash.com/photos/a-macbook-with-lines-of-code-on-its-screen-on-a-busy-desk-m_HRfLhgABo"
-          />
-        </div>
-        <div>
-          <Image
-            height={1000}
-            width={1000}
-            alt="error"
-            src="https://unsplash.com/photos/a-macbook-with-lines-of-code-on-its-screen-on-a-busy-desk-m_HRfLhgABo"
-          />
+          <Image alt="error" src={f1} />
         </div>
       </Slider>
     </div>

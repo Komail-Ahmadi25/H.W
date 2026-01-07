@@ -31,5 +31,5 @@ body {
 
 .image-slider-container .slick-prev:before,
 .image-slider-container .slick-next:before {
-  color: black;
+  color: white;
 }
