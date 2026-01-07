@@ -11,11 +11,11 @@ export default async function page() {
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
   const listOfUsers: User[] = await response.json();
   return (
-    <div className="w-full grid grid-cols-2 gap-6 bg-gray-500 p-6">
+    <div className="w-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 p-10">
       {listOfUsers.map((user) => (
         <div
           key={user.id}
-          className="bg-white text-green-400 p-3 flex flex-col gap-3 items-center"
+          className="flex flex-col gap-3 border-2 border-gray-300 rounded-md p-5 hover:shadow-lg hover:scale-105 duration-300"
         >
           <h1 className="font-bold text-4xl">{user.name}</h1>
           <Link
